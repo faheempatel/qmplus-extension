@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Just open the damn PDF in the motherfudgin' browser",
+  "description": "PDF links on qmplus will now always open in-browser",
+  "version": "0.5",
+
+  "content_scripts": [{
+    "matches": ["http://qmplus.qmul.ac.uk/*"],
+    "js": ["jquery-1.9.1.min.js", "script.js"]
+  }],
+
+  "update_url": "http://faheempatel.com/projects/qmplus-extension/updates.xml"
+}
